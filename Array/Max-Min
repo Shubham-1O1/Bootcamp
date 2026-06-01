@@ -1,0 +1,30 @@
+public class find_delete_min_max {
+   public find_delete_min_max() {
+   }
+
+   public static void main(String[] var0) {
+      int[] var1 = new int[]{1, 2, 3, 4, 5};
+      int var2 = var1.length;
+      int var3 = var1[0];
+      int var4 = var1[0];
+
+      for(int var5 = 1; var5 < var2; ++var5) {
+         if (var3 < var1[var5]) {
+            var3 = var1[var5];
+         }
+
+         if (var4 > var1[var5]) {
+            var4 = var1[var5];
+         }
+      }
+
+      System.out.println("Max : " + var3 + " and Min : " + var4);
+
+      for(int var6 = 0; var6 < var2; ++var6) {
+         if (var3 != var1[var6] && var4 != var1[var6]) {
+            System.out.print(var1[var6] + " ");
+         }
+      }
+
+   }
+}
